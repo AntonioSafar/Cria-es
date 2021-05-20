@@ -1,0 +1,29 @@
+print("\n******************* Calculadora ROBERTINHO *******************")
+print("Escolha uma opção:\n1-soma\n2-subtração\n3-multiplicação\n4-divisão")
+
+re=int(input())
+def claudine():
+    print("Digite o primeiro número:")
+    n1=int(input())
+    print('Digite o segundo número:')
+    n2=int(input())
+    return n1,n2
+    
+if re == 1:
+    num1,num2=claudine()
+    pa=num1+num2
+    print("%s+%r=%r" %(num1, num2, pa))
+elif re == 2:
+    num1,num2=claudine()
+    pe=num1-num2
+    print('%s-%s=%s'%(num1,num2,pe))
+elif re == 3:
+    num1,num2=claudine()
+    pi=num1*num2
+    print('%r*%r=%r'%(num1,num2,pi))
+elif re == 4:
+    num1,num2=claudine()
+    po=num1/num2
+    print('%s/%s=%s'%(num1,num2,po))
+else:
+    print('Deu pau, colocou opção inválida')
